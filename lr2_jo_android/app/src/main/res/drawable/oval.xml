@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <rotate android:fromDegrees="45">
+        <shape android:id="@+id/oval"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval"
+            android:useLevel="false"
+
+
+            >
+            <solid android:color="@color/colorOval"/>
+            <stroke
+                android:width="10dp"
+                android:color="@color/colorAccent">
+            </stroke>
+
+        </shape>
+        </rotate>
+    </item>
+</selector>
