@@ -6,25 +6,21 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView imageViewRing;
-    ImageView imageViewOval;
+    ImageView imagePhone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.setTitle("TestAppName");
+        this.setTitle("Jo's App");
 
 
-        imageViewRing=(ImageView)findViewById(R.id.imageViewRing);
-        imageViewOval=(ImageView)findViewById(R.id.imageViewOval);
+        imagePhone=(ImageView)findViewById(R.id.imagePhone);
         setDrawable();
     }
 
     private void setDrawable() {
-
-        imageViewRing.setImageResource(R.drawable.ring);
-        imageViewOval.setImageResource(R.drawable.oval);
+        imagePhone.setImageResource(R.drawable.shape);
     }
 
 }

@@ -1,26 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDarkest">
 
     <ImageView
-        android:id="@+id/imageViewRing"
+        android:id="@+id/imagePhone"
         android:layout_width="match_parent"
-        android:layout_marginLeft="200dp"
-        android:layout_marginBottom="200dp"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="false"
-         />
+        android:layout_height="255dp"
 
-    <ImageView
-        android:id="@+id/imageViewOval"
-        android:layout_width="match_parent"
-        android:layout_marginRight="200dp"
-        android:layout_marginTop="200dp"
-        android:layout_height="match_parent"
+
         android:layout_centerInParent="false"
-         />
-    </android.support.constraint.ConstraintLayout>
+        android:layout_margin="20dp" />
+
+    <GridLayout
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:rowCount="4">
+
+
+        <Button
+            android:text="1"
+            android:background="@color/colorYellowLight"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            />
+
+        <Button
+            android:text="2"
+            android:background="@color/colorYellowLight"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:text="3"
+            android:background="@color/colorYellowLight"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:text="4"
+            android:background="@color/colorYellowLight"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:text="5"
+            android:background="@color/colorYellowLight"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:text="6"
+            android:background="@color/colorYellowLight"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:text="7"
+            android:background="@color/colorYellowLight"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:text="8"
+            android:background="@color/colorYellowLight"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:text="9"
+            android:background="@color/colorYellowLight"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:text="*"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:text="0"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:text="#"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+
+
+    </GridLayout>
+
+
+    </LinearLayout>
