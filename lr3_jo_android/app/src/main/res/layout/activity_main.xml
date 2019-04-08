@@ -11,11 +11,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="80dp">
+        tools:layout_editor_absoluteY="80dp"
+        android:layout_marginTop="20dp">
 
         <ImageView
-            android:layout_width="100px"
-            android:layout_height="100px"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             android:src="@drawable/rectangle" />
 
@@ -30,13 +31,13 @@
                 android:src="@drawable/rectangle" />
 
             <ImageView
-                android:layout_width="100px"
-                android:layout_height="100px"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:src="@drawable/circle" />
 
             <ImageView
-                android:layout_width="100px"
-                android:layout_height="100px"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:src="@drawable/rectangle" />
         </LinearLayout>
 
@@ -47,19 +48,15 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:columnCount="4"
-            android:rowCount="3">
+            android:rowCount="3"
+            android:layout_margin="30px">
 
             <Button android:text="1"
                 android:layout_columnSpan="1"
                 />
 
-            <ImageView
-                android:layout_width="400px"
-                android:layout_height="100px"
-                android:src="@drawable/rectangle"
-                android:layout_columnSpan="2"/>
-
-            <Button android:text="2" />
+            <Button android:text="2"
+                />
 
             <Button android:text="3" />
 
@@ -73,7 +70,9 @@
 
             <Button android:text="8" />
 
-            <Button android:text="9" />
+            <Button android:text="9"
+                android:layout_width="200dp"
+                android:layout_columnSpan="2"/>
         </GridLayout>
     </LinearLayout>
 
