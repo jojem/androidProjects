@@ -13,6 +13,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/text_hello"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hello World!"
@@ -26,14 +27,15 @@
             android:id="@+id/b1"
             android:layout_width="150dp"
             android:layout_height="90dp"
-            android:text="Button1"
-            android:onClick="someClickForButton" />
+            android:text="Show my Last Name"
+            android:onClick="onButtonClick" />
 
         <Button
             android:id="@+id/b2"
             android:layout_width="150dp"
             android:layout_height="90dp"
-            android:text="Button2" />
+            android:text="Show my First Name"
+            android:onClick="someClickForButton"/>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
