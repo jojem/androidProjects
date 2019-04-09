@@ -22,8 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button b1 = (Button)findViewById(R.id.b1);
         TextView tx1 = (TextView)findViewById(R.id.text_hello);
-        b1.setText("Last Name Showed");
-        tx1.setText("Chakhkieva");
+        b1.setText("Chakhkieva");
         Button b2 = (Button)findViewById(R.id.b2);
         b2.setText("Show My First Name");
     }
@@ -32,9 +31,8 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(MainActivity.this, "Button2 is pressed",
                 Toast.LENGTH_SHORT).show();
 
-        ((Button)v).setText("First Name Showed");
+        ((Button)v).setText("Jamilya");
         TextView tx1 = (TextView)findViewById(R.id.text_hello);
-        tx1.setText("Jamilya");
         Button b1 = (Button)findViewById(R.id.b1);
         b1.setText("Show My Last Name");
     }
