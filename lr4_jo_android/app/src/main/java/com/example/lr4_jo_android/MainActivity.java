@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,8 +15,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public  void onButtonClick(View v){
-        Toast.makeText(MainActivity.this, "Pressed Button1",
+        Toast.makeText(MainActivity.this, "Button1 is pressed",
                 Toast.LENGTH_SHORT).show();
 
+        Button b1 = (Button)findViewById(R.id.b1);
+        b1.setText("Pressed Button");
     }
+
+
 }
