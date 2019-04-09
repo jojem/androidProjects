@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button b2 = (Button)findViewById(R.id.b2);
+        b2.setOnClickListener(click1);
     }
 
     public  void onButtonClick(View v){
@@ -21,6 +23,22 @@ public class MainActivity extends AppCompatActivity {
         Button b1 = (Button)findViewById(R.id.b1);
         b1.setText("Pressed Button");
     }
+
+    public void someClickForButton(View v){
+        ((Button)v).setText("Pressed");
+    }
+
+    View.OnClickListener click1 = new View.OnClickListener() {
+      @Override
+      public void onClick(View v){
+//          someClickForButton(v);
+          onButtonClick(v);
+          Toast.makeText(MainActivity.this, "Button2 pressed " +
+                  "and text showed", Toast.LENGTH_LONG).show();
+      }
+    };
+
+
 
 
 }

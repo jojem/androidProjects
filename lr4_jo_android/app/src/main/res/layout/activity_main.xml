@@ -27,10 +27,13 @@
             android:layout_width="150dp"
             android:layout_height="90dp"
             android:text="Button1"
-            android:onClick="onButtonClick"
-            />
+            android:onClick="someClickForButton" />
 
-
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:text="Button2" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
