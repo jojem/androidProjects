@@ -17,27 +17,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public  void onButtonClick(View v){
-        Toast.makeText(MainActivity.this, "Button1 is pressed",
-                Toast.LENGTH_SHORT).show();
-
         Button b1 = (Button)findViewById(R.id.b1);
-        TextView tx1 = (TextView)findViewById(R.id.text_hello);
-        b1.setText("Chakhkieva");
         Button b2 = (Button)findViewById(R.id.b2);
-        b2.setText("Show My First Name");
+        Button b3 = (Button)findViewById(R.id.b3);
+
+        b1.setText("Button1");
+        b2.setText("Button2");
+        b3.setText("Button3");
+
+        ((Button)v).setText("Chakhkieva");
     }
-
-    public void someClickForButton(View v){
-        Toast.makeText(MainActivity.this, "Button2 is pressed",
-                Toast.LENGTH_SHORT).show();
-
-        ((Button)v).setText("Jamilya");
-        TextView tx1 = (TextView)findViewById(R.id.text_hello);
-        Button b1 = (Button)findViewById(R.id.b1);
-        b1.setText("Show My Last Name");
-    }
-
-
-
-
 }

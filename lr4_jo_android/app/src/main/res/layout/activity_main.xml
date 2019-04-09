@@ -16,7 +16,7 @@
             android:id="@+id/text_hello"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:text="Show my last name"
             android:layout_margin="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -27,15 +27,24 @@
             android:id="@+id/b1"
             android:layout_width="150dp"
             android:layout_height="90dp"
-            android:text="Show my Last Name"
+            android:text="check"
             android:onClick="onButtonClick" />
 
         <Button
             android:id="@+id/b2"
             android:layout_width="150dp"
             android:layout_height="90dp"
-            android:text="Show my First Name"
-            android:onClick="someClickForButton"/>
+            android:layout_gravity="center"
+            android:text="check"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_gravity="end"
+            android:text="check"
+            android:onClick="onButtonClick"/>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
