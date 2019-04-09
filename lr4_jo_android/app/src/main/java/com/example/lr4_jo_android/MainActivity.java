@@ -12,16 +12,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button b1 = (Button)findViewById(R.id.b1);
+        b1.setOnClickListener(click1);
         Button b2 = (Button)findViewById(R.id.b2);
         b2.setOnClickListener(click1);
+        Button b3 = (Button)findViewById(R.id.b3);
+        b3.setOnClickListener(click1);
     }
 
     public  void onButtonClick(View v){
-        Toast.makeText(MainActivity.this, "Button1 is pressed",
-                Toast.LENGTH_SHORT).show();
-
         Button b1 = (Button)findViewById(R.id.b1);
-        b1.setText("Pressed Button");
+        Button b2 = (Button)findViewById(R.id.b2);
+        Button b3 = (Button)findViewById(R.id.b3);
+        b1.setText("Button1");
+        b2.setText("Button2");
+        b3.setText("Button3");
     }
 
     public void someClickForButton(View v){
@@ -31,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
     View.OnClickListener click1 = new View.OnClickListener() {
       @Override
       public void onClick(View v){
-//          someClickForButton(v);
           onButtonClick(v);
-          Toast.makeText(MainActivity.this, "Button2 pressed " +
-                  "and text showed", Toast.LENGTH_LONG).show();
+          ((Button)v).setText("Jamilya");
+          Toast.makeText(MainActivity.this, "Button is pressed",
+                  Toast.LENGTH_LONG).show();
       }
     };
 

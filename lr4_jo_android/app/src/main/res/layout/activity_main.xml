@@ -15,7 +15,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:text="Task 4: Create 3 buttons with
+            showing first name on it when button
+             is pressed throw view argument."
             android:layout_margin="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -26,14 +28,22 @@
             android:id="@+id/b1"
             android:layout_width="150dp"
             android:layout_height="90dp"
-            android:text="Button1"
-            android:onClick="someClickForButton" />
+            android:layout_gravity="center"
+            android:text="Button1"/>
 
         <Button
             android:id="@+id/b2"
+            android:layout_gravity="center"
             android:layout_width="150dp"
             android:layout_height="90dp"
             android:text="Button2" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:text="Button3" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
