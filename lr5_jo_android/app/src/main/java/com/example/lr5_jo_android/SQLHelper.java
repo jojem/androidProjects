@@ -1,5 +1,6 @@
 package com.example.lr5_jo_android;
 
+import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -31,5 +32,18 @@ public class SQLHelper extends SQLiteOpenHelper {
         return db.query("table1", new String[]{"_id", "name",
                         "Age"}, null, null, null,
                 null,null);
+
+
     }
+
+    //insert some values for db
+    public void insertSomeValue(String name, int age){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put("name", name);
+        cv.put("Age", age);
+
+        db.insert("table1", null, cv);
+    }
+
 }

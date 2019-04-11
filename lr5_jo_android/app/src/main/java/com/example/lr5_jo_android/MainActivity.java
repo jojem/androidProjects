@@ -1,10 +1,12 @@
 package com.example.lr5_jo_android;
 
+import android.content.ContentValues;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 
 import java.util.ArrayList;
 
@@ -17,6 +19,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         db = new SQLHelper(this);
+        db.insertSomeValue("Pasha", 23);
+        db.insertSomeValue("Elena", 49);
+        db.insertSomeValue("David", 24);
+        db.insertSomeValue("Jamilya", 20);
+        db.insertSomeValue("Vova", 20);
 
         LinearLayout ll = (LinearLayout)findViewById(R.id.ll);
         LinearLayout row;
@@ -31,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
 
             TextView name = new TextView(this);
             name.setText(p.name);
-            name.setWidth(120);
+            name.setWidth(250);
 
             TextView Age = new TextView(this);
-            name.setText(Integer.toString(p.Age));
-            name.setWidth(120);
+            Age.setText(Integer.toString(p.Age));
+            Age.setWidth(120);
 
             row.addView(id);
             row.addView(name);
@@ -43,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
             ll.addView(row);
         }
+
     }
 
     public ArrayList<Person> getList(){
