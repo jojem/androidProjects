@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         db = new SQLHelper(this);
 
-
         db.insertSomeValue("Jamilya", "Chakhkieva", 1998, 239);
-
+        db.insertSomeValue("Gennadiy", "Rudkov", 1999, 211);
+        db.insertSomeValue("Aida", "Khubieva", 2000, 300);
 
         LinearLayout ll = (LinearLayout)findViewById(R.id.ll);
         LinearLayout row;
@@ -47,11 +47,11 @@ public class MainActivity extends AppCompatActivity {
 
             TextView Year = new TextView(this);
             Year.setText(Integer.toString(p.Year));
-            Year.setWidth(120);
+            Year.setWidth(150);
 
             TextView amountOfPoints = new TextView(this);
             amountOfPoints.setText(Integer.toString(p.amountOfPoints));
-            amountOfPoints.setWidth(120);
+            amountOfPoints.setWidth(150);
 
 
             row.addView(id);

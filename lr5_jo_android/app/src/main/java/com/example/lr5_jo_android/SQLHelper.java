@@ -17,7 +17,8 @@ public class SQLHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db){
         db.execSQL("create table " +
                 "table1 (_id integer primary key autoincrement," +
-                "name text not null, Age integer not null);");
+                "fname text not null, lname text not null, Year integer not null," +
+                " amountOfPoints integer not null);");
     }
 
     @Override
