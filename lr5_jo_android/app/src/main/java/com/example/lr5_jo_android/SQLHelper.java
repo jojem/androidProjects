@@ -29,19 +29,21 @@ public class SQLHelper extends SQLiteOpenHelper {
 
     public Cursor getFullTable(){
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.query("table1", new String[]{"_id", "name",
-                        "Age"}, null, null, null,
+        return db.query("table1", new String[]{"_id", "fname", "lname",
+                        "Year", "amountOfPoints"}, null, null, null,
                 null,null);
 
 
     }
 
     //insert some values for db
-    public void insertSomeValue(String name, int age){
+    public void insertSomeValue(String fname, String lname, int year, int amount){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
-        cv.put("name", name);
-        cv.put("Age", age);
+        cv.put("fName", fname);
+        cv.put("lName", lname);
+        cv.put("Year", year);
+        cv.put("amountOfPoints", amount);
 
         db.insert("table1", null, cv);
     }
