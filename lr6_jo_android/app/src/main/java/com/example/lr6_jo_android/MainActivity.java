@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onBtnClick(View v){
-        String[] array = new String[]{"First point", "Second point", "Third point"};
+        String[] array = new String[]{"First point", "Second point", "Third point", "Fourth point"};
         ArrayAdapter<String> adapter = new ArrayAdapter(getApplicationContext(),
                 android.R.layout.simple_list_item_1, array);
-        ((ListView)findViewById(R.id.list)).setAdapter(adapter);
+        ((ListView)v).setAdapter(adapter);
     }
 }
