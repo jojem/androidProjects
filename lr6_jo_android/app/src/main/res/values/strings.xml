@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">lr6_jo_android</string>
+    <string name="lab_string">Some laboratory work</string>
 </resources>
