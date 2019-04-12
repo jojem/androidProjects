@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">lr6_jo_android</string>
     <string name="lab_string">Some laboratory work</string>
+    <string-array name="stringArray">
+        <item>Row 1</item>
+        <item>Row 2</item>
+        <item>Row 3</item>
+        <item>Row 4</item>
+        <item>Row 5</item>
+        <item>Row 6</item>
+    </string-array>
 </resources>
